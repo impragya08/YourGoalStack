@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Mastery Tracker App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="hero-section">
+        <img src="creativity.png" alt="Skill Sprout Logo" class="hero-logo">
+        <h1 class="hero-title">Your Goal Stack</h1>
+        <p class="hero-tagline"><em>Anchoring Daily Achievements, Docking Daily Accomplishments</em></p>
+      </div>
+      
+    <div class="log-section">
+      <h2>Log Skill Practice</h2>
+      <label for="skill">Skill:</label>
+      <input type="text" id="skill" placeholder="Enter the skill you practiced">
+      <br></br>
+      <label for="duration">Duration (hours):</label>
+      <input type="number" id="duration">
+      <button id="log-btn">Log Practice</button>
+    </div>
+    <div class="progress-section">
+      <h2>Skill Mastery Progress</h2>
+      <div id="progress-chart">
+        <canvas></canvas>
+      </div>
+    </div>
+    <div class="goal-section">
+      <h2>Set Skill Goals</h2>
+      <label for="goal-skill">Select Skill:</label>
+      <input type="text" id="goal-skill" placeholder="Enter the skill for your goal">
+      <br></br>
+      <label for="goal-duration">Goal Duration (hours):</label>
+      <input type="number" id="goal-duration">
+      
+      <button id="set-goal-btn">Set Goal</button>
+    </div>
+    <div class="goal-progress-section">
+      <div class="goal-progress-bars" id="goal-progress-bars">
+        <!-- Progress bars for goal progress and remaining hours dynamically populated in JavaScript -->
+      </div>
+    </div>
+    <div class="tips-section">
+      <h2>Skill Tips</h2>
+      <div id="skill-tips">
+        <!-- Tips populated dynamically in JavaScript -->
+      </div>
+    </div>
+  </div>
+ 
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.js"></script>
+</body>
+</html>

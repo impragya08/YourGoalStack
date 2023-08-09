@@ -1,0 +1,172 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  
+  /* Container styles */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+ 
+  
+  /* Heading styles */
+  h1 {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Section styles */
+  .section {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Input styles */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: transparent;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #2a89ee;
+  }
+  
+  /* Button styles */
+  button {
+    display: inline-block;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color:#146C94 ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0f4a5a;
+  }
+  
+  /* Progress bar styles */
+  .progress-bar-container {
+  
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #91C8E4;
+  
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  /* Tips styles */
+  .tips {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Flex layout */
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  .top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 10px; /* Adjust this value as needed to avoid overlapping */
+  }
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    /* Adjust other styles as needed for smaller screens */
+  }
+  /* Hero section styles */
+/* Hero section styles */
+/* Hero section */
+/* Add this CSS to style.css */
+
+.hero-section {
+    position: relative;
+    text-align: center;
+   
+    color: #0b0a0a;
+  }
+  
+  .hero-logo {
+    max-width: 200px; /* Adjust the width as needed */
+   
+  }
+  
+  .hero-heading {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-tagline {
+    font-size: 18px;
+  }
+  
